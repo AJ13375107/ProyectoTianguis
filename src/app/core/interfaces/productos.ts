@@ -1,9 +1,8 @@
 export interface Producto {
+    vendedorId: number,
     id: number,
     nombre: string,
     precio: number,
-    esVegano: boolean,
-    esCeliaco: boolean,
     descripciones: string,
     fotoUrl: string,
 }

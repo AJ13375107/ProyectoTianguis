@@ -1,19 +1,35 @@
-
-<div class="dashboard">
-    <h2>Dashboard</h2>
-    <div class="register-items">
-        <h3>Register Items</h3>
-        <form>
-            <label for="itemName">Item Name:</label>
-            <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required />
-
-            <label for="itemPrice">Item Price:</label>
-            <input type="number" id="itemPrice" name="itemPrice" placeholder="Enter item price" required />
-
-            <label for="itemDescription">Item Description:</label>
-            <textarea id="itemDescription" name="itemDescription" placeholder="Enter item description"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+<div id="titulo"> 
+    <h2>Bienvenido, {{usuario.nombre}} tu ID de vendedor es: {{usuario.id}}</h2>
+</div>
+<div id="botones">
+    
+    <button [routerLink]="['/registrar-productos']" >
+        <img src="assets/img/registrarProducto.png" alt="registrarProducto" />
+        <span>Registrar productos</span>
+        
+    </button>
+    <button [routerLink]="['/productos-vendedor']" >
+        <img src="assets/img/verProductos.png" alt="verProductos" />
+        <span>Ver productos</span> 
+    </button>
+    <button [routerLink]="['/ver-estadisticas']" >
+        <img src="assets/img/verEstadisticas.png" alt="verEstadisticas" />
+        <span>Ver estadísticas</span>
+        
+    </button>
+    <button [routerLink]="['/ver-pedidos']" >
+        <img src="assets/img/verPedidos.png" alt="verPedidos" />
+        <span>Ver pedidos</span>
+        
+    </button>
+    <button>
+        <img src="assets/img/ajustes.png" alt="ajustes" />
+        <span>Ajustes</span>
+        
+    </button>
+    <button>
+        <img src="assets/img/ventas.png" alt="ventas" />
+        <span>Ventas</span>
+        
+    </button>
 </div>
